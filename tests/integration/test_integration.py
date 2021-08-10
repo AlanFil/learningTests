@@ -5,7 +5,7 @@ import unittest
 class TestIntegrationBasic(unittest.TestCase):
     def setUp(self):
         # Load test data
-        with open('fixtures\\test_basic.json', 'r') as f:
+        with open('tests/integration/fixtures/test_basic.json', 'r') as f:
             self.data = json.load(f)
 
     def test_name(self):
