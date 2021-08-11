@@ -8,4 +8,4 @@ script:
 matrix:
   include:
     - python: "3.8"
-      script: "flake8"
+      script: "flake8 tests/"
