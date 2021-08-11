@@ -9,6 +9,7 @@ def func_for_tests(numbers):
 class Test(unittest.TestCase):
     def test_func1_sum(self):
         self.assertEqual(func_for_tests([1, 2, 3]), 6)
+        self.assertEqual(func_for_tests([-1000, 0, 0]), -1000)
 
     def test_func1_is_not_none(self):
         self.assertIsNotNone(func_for_tests([1, 2, 3]))
