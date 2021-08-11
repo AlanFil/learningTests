@@ -14,8 +14,7 @@ class Test(unittest.TestCase):
         self.assertIsNotNone(func_for_tests([1, 2, 3]))
 
     def test_fractions(self):
-        fractions = [Fraction(1, 4), Fraction(1, 4), Fraction(1, 2)]
-        self.assertEqual(func_for_tests(fractions), 1)
+        self.assertEqual(func_for_tests([Fraction(1, 4), Fraction(1, 4), Fraction(1, 2)]), 1)
 
     def test_wrong_type(self):
         with self.assertRaises(TypeError):
